@@ -31,10 +31,10 @@ app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use("/fakultas", fakultasRouter);
+app.use('/fakultas', fakultasRouter);
 app.use('/prodi', prodiRouter);
-app.use("/api/fakultas", fakultasRouterApi);
-app.use("/api/prodi", prodiRouterapi);
+app.use('/api/fakultas', fakultasRouterApi);
+app.use('/api/prodi', prodiRouterapi);
 
 // connect to mongoDB
 connectDB();

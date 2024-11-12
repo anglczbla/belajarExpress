@@ -43,6 +43,9 @@
                     <td><%= prodi.NamaProdi %></td>
                     <td><%= prodi.Fakultas %></td>
                     <td><%= prodi.Singkatan %></td>
+                    <td>
+                        <% prodi.fakultas_id && prodi.fakultas_id.nama ? data.fakultas_id.nama : 'Belum ada fakultas' %>
+                    </td>
                 </tr>
             <% }); %>
         </tbody>
